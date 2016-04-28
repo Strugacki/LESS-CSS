@@ -1,0 +1,35 @@
+.border(@thickness, @color){
+    border: @thickness solid @color;
+}
+
+html{
+    width: 100vh;
+    height: 100vh;
+}
+body{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: darkgray;
+    div{
+        width: 40%;
+        text-align: center;
+        height: 15%;;
+        &.A{
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            .border(2px,red);
+            background-color: yellow;
+        }
+        &.B{
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            .border(2px,blue);
+            background-color: white;
+        }
+    }
+}

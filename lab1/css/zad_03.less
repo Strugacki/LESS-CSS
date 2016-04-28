@@ -1,0 +1,25 @@
+.border(@thick,@color){
+    border: @thick solid @color;
+}
+html,body{
+    width: 100%;
+}
+body{
+    background-image: url(../css/listki.gif);
+    background-position: 0px 0px ;
+    background-repeat: repeat-y;
+    &>div.tresc{
+        width: 80%;
+        margin-left: 150px;
+        .border(2px,black);
+        &>p{
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+            &>img{
+                padding: 5px;
+                float: left;
+            }
+        }
+    }
+}
